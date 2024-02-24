@@ -4,7 +4,7 @@ resource "google_secret_manager_secret" "terraform_sa_key" {
   secret_id = "terraform-sa-key"
 
   replication {
-    automatic = true
+    auto {}
   }
 
   labels = var.labels

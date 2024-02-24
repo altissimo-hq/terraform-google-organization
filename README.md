@@ -7,8 +7,8 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | n/a |
-| <a name="provider_google.sa"></a> [google.sa](#provider\_google.sa) | n/a |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.14.0 |
+| <a name="provider_google.sa"></a> [google.sa](#provider\_google.sa) | 5.14.0 |
 
 ## Modules
 
