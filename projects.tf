@@ -1,6 +1,7 @@
 module "terraform" {
-  count  = var.create_terraform_project ? 1 : 0
-  source = "altissimo-hq/project/google"
+  count   = var.create_terraform_project ? 1 : 0
+  source  = "altissimo-hq/project/google"
+  version = "~> 1.0"
 
   project_id      = "${var.project_prefix}-terraform"
   project_name    = var.project_name_prefix != null ? "${var.project_name_prefix} - Terraform" : "Terraform"
@@ -36,6 +37,7 @@ module "terraform" {
 module "project" {
   for_each = var.projects
   source   = "altissimo-hq/project/google"
+  version  = "~> 1.0"
 
   project_id      = "${var.project_prefix}-${each.key}"
   project_name    = each.key

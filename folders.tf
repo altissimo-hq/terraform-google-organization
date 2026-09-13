@@ -1,7 +1,6 @@
 module "folders" {
-  # source  = "../terraform-google-folders"
   source  = "altissimo-hq/folders/google"
-  version = "1.0.0"
+  version = "~> 1.0"
 
   parent = data.google_organization.org.name
   folders = {

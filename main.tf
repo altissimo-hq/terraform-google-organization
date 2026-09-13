@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    google = {
-      source                = "hashicorp/google"
-      configuration_aliases = []
-    }
-  }
-}
-
 provider "google" {
   alias = "sa"
 
