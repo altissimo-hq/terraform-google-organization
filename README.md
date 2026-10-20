@@ -2,21 +2,21 @@
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_google"></a> [google](#requirement\_google) | >= 6.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_google"></a> [google](#provider\_google) | >= 6.0 |
 | <a name="provider_google.sa"></a> [google.sa](#provider\_google.sa) | >= 6.0 |
 
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_folders"></a> [folders](#module\_folders) | altissimo-hq/folders/google | ~> 1.0 |
 | <a name="module_project"></a> [project](#module\_project) | altissimo-hq/project/google | ~> 1.0 |
 | <a name="module_terraform"></a> [terraform](#module\_terraform) | altissimo-hq/project/google | ~> 1.0 |
@@ -24,7 +24,7 @@
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [google_cloud_identity_group.groups](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_identity_group) | resource |
 | [google_cloud_identity_group_membership.admin](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_identity_group_membership) | resource |
 | [google_cloud_identity_group_membership.terraform](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_identity_group_membership) | resource |
@@ -39,7 +39,7 @@
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_admin_roles"></a> [admin\_roles](#input\_admin\_roles) | IAM Roles to assign to the admin user in the organization (list) | `list(string)` | <pre>[<br/>  "roles/owner",<br/>  "roles/resourcemanager.organizationAdmin"<br/>]</pre> | no |
 | <a name="input_admin_user"></a> [admin\_user](#input\_admin\_user) | Admin User Name | `string` | `"admin"` | no |
 | <a name="input_billing_account"></a> [billing\_account](#input\_billing\_account) | Billing Account ID | `string` | n/a | yes |
@@ -56,7 +56,7 @@
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_iam_policy_bindings"></a> [iam\_policy\_bindings](#output\_iam\_policy\_bindings) | IAM policy bindings for the organization. |
 | <a name="output_org"></a> [org](#output\_org) | Google Organization Resource |
 | <a name="output_terraform_project"></a> [terraform\_project](#output\_terraform\_project) | Terraform Project Module |
